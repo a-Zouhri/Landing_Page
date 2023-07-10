@@ -3,18 +3,21 @@
 /* ------------------ */
 
 :root {
+
+    font-size: 16px;
+    
     /* colors */
-    --dark : #1F2937;
-    --light : #F9FAF8;
-    --gray : #E5E7EB;
-    --blue : #3882F6;
+    --dark: #1F2937;
+    --light: #F9FAF8;
+    --gray: #E5E7EB;
+    --blue: #3882F6;
 
     /* font size */
-    --fs-400 : 3rem;
-    --fs-300 : 2.25rem;
-    --fs-200 : 1.5rem;
-    --fs-100 : 1.125rem;
-}   
+    --fs-400: 3rem;
+    --fs-300: 2.25rem;
+    --fs-200: 1.5rem;
+    --fs-100: 1.125rem;
+}
 
 /* ------------ */
 /*    Reset     */
@@ -32,20 +35,22 @@
 /* Remove list styles on ul, ol elements with a list role */
 ul[role='list'],
 ol[role='list'] {
-  list-style: none;
+    list-style: none;
 }
 
 /* remove default style from links */
 
 a {
     text-decoration: none;
+    font-size: inherit;
+    color: inherit;
 }
 
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 
@@ -54,8 +59,8 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
-  border: none;
+    font: inherit;
+    border: none;
 }
 
 
@@ -66,4 +71,79 @@ body {
     line-height: 1.5;
     display: flex;
     flex-direction: column;
+    background-color: var(--dark);
+    font-family: monospace;
+ 
+}
+
+
+/* ---------------- */
+/*    Components    */
+/* ---------------- */
+
+
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .25rem 0;
+    font-size: var(--fs-200);
+    color: var(--light);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+    font-size: var(--fs-100);
+    gap: 2rem;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-section {
+    flex-basis: 250px;
+    padding: 5rem 0;
+    max-width: 60rem;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    gap : 1rem;
+}
+
+.container {
+    flex: 1 1 50%;
+}
+
+.container > h1 {
+    color: var(--light);
+    font-size: var(--fs-400);
+    font-weight: bolder;
+}
+
+.container > p {
+    color: var(--gray);    
+}
+
+.container > button {
+    background-color: var(--blue);
+    padding: .25rem .5rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+
+.image-placeholder {
+    background-color: gray;
+    color: var(--light);
+    aspect-ratio: 2/1;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    flex : 0 0 40%;
+
 }
