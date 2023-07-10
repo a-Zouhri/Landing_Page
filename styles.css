@@ -145,5 +145,48 @@ main {
     place-items: center;
     font-size: 14px;
     flex : 0 0 40%;
+}
 
+.second-section {
+    background-color: var(--light);
+    flex-basis: 400px;
+}
+
+.second-section > h2 {
+    font-size: var(--fs-300);
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+}
+
+.second-container {
+    display: flex;
+    gap : 1rem;
+    max-width: 40rem;
+    margin-inline : auto;
+    text-align: center;
+}
+
+.second-container > div > div {
+    border : 4px solid var(--blue);
+    aspect-ratio: 1;
+    border-radius: 1rem;
+}
+
+.third-section {
+    flex-basis: 200px;
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.third-section > p {
+    max-width: 60rem;
+}
+.third-section > p > span {
+    display: block;
+    font-size: var(--fs-100);
+    font-weight: bold;
+    text-align: right;
 }
