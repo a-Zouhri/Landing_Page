@@ -109,7 +109,7 @@ main {
 .first-section {
     flex-basis: 250px;
     padding: 5rem 0;
-    max-width: 60rem;
+    max-width: 80rem;
     margin-inline: auto;
     display: flex;
     align-items: center;
@@ -161,8 +161,8 @@ main {
 
 .second-container {
     display: flex;
-    gap : 1rem;
-    max-width: 40rem;
+    gap : 5rem;
+    max-width: 60rem;
     margin-inline : auto;
     text-align: center;
 }
@@ -189,4 +189,41 @@ main {
     font-size: var(--fs-100);
     font-weight: bold;
     text-align: right;
+}
+
+.forth-section {
+    background-color: var(--light);
+    flex-basis: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-container {
+    background-color: var(--blue);
+    max-width: 70rem;
+    padding: 3rem 6rem;
+    border-radius: .75rem;
+    display: flex;
+    gap: 5rem;
+    color: var(--light);
+}
+
+.third-container > div:nth-child(2) {
+    align-self: center;
+}
+ 
+.third-container button {
+    background-color: var(--blue);
+    padding: 0.25rem 0.85rem;
+    border: 1px solid var(--light);
+    border-radius: .5rem;
+    color: var(--light);
+}
+
+footer {
+    flex-basis: 100px;
+    color: var(--light);
+    display: grid;
+    place-items: center;
 }
